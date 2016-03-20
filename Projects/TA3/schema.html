@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../../Home.css">
+	<meta charset="UTF-8">
+	<title>Schema</title>
+</head>
+
+<body>
+
+
+	<ul>
+		<li><a href="TA3.php">Home</a></li>
+
+	</ul>
+	<br/>
+	<h1>TA3</h1>
+
+	<h2> Simplified Schema for TA3. </h2>
+
+	<img src="TA3Schema.png" style="width:400px;height:450px">
+	<br>
+	<h2> Schema before peer review. </h2>
+
+
+
+		<p>As seen in the picture above, we went with a 9 table Schema with User covering all types of roles that may be using the site, applicant, admin, or instructor all with a unique user id that is 
+		auto incrimented. Each application has a unique id as well, this allows us to go check for an ealier version and grab the one with the latest time stamp.
+		We have a course info table that assigns each possible course for any semester any year, this allows the applicant to tell the DB what course, and when they took the course.
+		The desired courses allows the applicant to apply for more than one course, the offered courses allows the admin to post info on each course that is hiring.
+		The prof desires table allows the instructor to recomend a TA. The hired table allows the applicants to check the status of which courses have hired their TA
+		They may also check their own status in the Application table. I worked with Tigran Mnatsakanyan on this schema design. </p>
+
+	
+
+	<h2> Schema after peer review. </h2>
+
+<br>  
+	<img src="Final Schema.png" style="width:400px;height:450px">
+
+	<br>
+	<p>In our peer review we talked about the ability to version our applications. We decided to limit each applicant to one application, but the information linked to
+	the application would be changeable, there will be timestamps that will let the instructors query information from ealier edits, since the information will be 
+	stored in a seperate table. </p>
+
+	<br>
+	<p>We changed the courses taken table to store the most up to date grade but professors can see older grade submissions, we are not splitting courses into sections,
+	so if there is a semester with two professors teaching the same class you can search a course by professor taught, and the student will say which professor taught
+	the course they are took.</p>
+
+	<br>
+	<p>The application table now has a foreign primary key, the userId from the User table. We used to auto increment an application id to keep track of application changes
+	and updates, but now that we are storing application info seperately we can keep track of the time stamps from that table. Also a small note, we made email's in users
+	be unique, which we didn't have on the first version.</p>
+
+	
+
+My peer review paragraph for Tigran:
+Your application form seems pretty straight forward and it looks like you are making use of the schema. One thing I would think about is when you ask them to fill out the form for classes that they took, do you want them to fill out all the classes they have ever taken or just relevant classes. I see advantages in requiring them to submit more classes as far as seeing if they are good students but that also is a lot of data being stored. The alternative would be just requiring them to submit grades for only the classes they are applying for, but if they are an inconsistent student you might get a lemon. We might also consider asking for overall GPA in the future.

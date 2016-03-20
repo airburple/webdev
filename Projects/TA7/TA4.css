@@ -1,0 +1,129 @@
+body {
+    background-color: red;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+li {
+    float: left;
+}
+h1 {
+    background-color: white;
+    display: block;
+    width:740px;
+}
+a {
+    background-color: white;
+    display: block;
+    width: 400px;
+    height: 40px;
+     z-index: -1;
+}
+table, th, td {
+   border: 2px solid black;
+}
+footer { 
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 650px;
+}
+
+input:required:invalid, input:focus:invalid
+{
+  background-image: url("X.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  -moz-box-shadow: none;
+}
+
+
+input:required:valid
+{
+  background-image: url("Check.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+#signup {
+    background-color: #FF6666; 
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width:740px;
+    height:800px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 0px;
+    z-index: -1;
+}
+
+#field {
+    background-color: White; 
+    position: absolute;
+    left: 20px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 0px;
+    z-index: -2;
+}
+
+
+#name1 {
+    background-color: #FFE6E6; 
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width:740px;
+    height:1000px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 0px;
+    z-index: -1;
+}
+
+#application {
+    background-color: #FFE6E6; 
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width:740px;
+    height:12000px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 0px;
+    
+}
+#courses {
+    background-color: #FFE6E6; 
+    position: absolute;
+    left: 10px;
+    top: 125px;
+    width:1540px;
+    height:12050px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 0px;
+    z-index: -1;
+}
+
+
+
+
+.hidden{
+
+    display:none
+}
+
+#nav {
+    background-color: white;
+    display: block;
+    width: 800px;
+    height: 40px;
+     z-index: -1;
+}

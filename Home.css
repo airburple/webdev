@@ -1,0 +1,48 @@
+/* Aaron Burrell Jan 2015
+This is the css for my main page only.
+ It should help keep the central div section the main focus of each page,
+ and give the main site some consistancy.
+ */
+
+body {
+    background-color: green;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+li {
+    float: left;
+}
+
+a {
+    background-color: white;
+    display: block;
+    width: 180px;
+}
+
+img {
+
+    z-index: -1;
+}
+footer {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 600px;
+    width: 500px;
+}
+div {
+    position: absolute;
+    left: 60px;
+    top: 150px;
+    width:304px;
+    height:400px;
+    padding: 25px;
+    border: 5px solid black;
+    margin: 0px;
+}
