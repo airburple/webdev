@@ -1,0 +1,67 @@
+/*================================================
+
+General
+
+================================================*/
+html,
+body {
+  background-color: #000;
+  height: 100%;
+}
+
+body {
+  background: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font: 100%/1.5 sans-serif;
+  overflow: hidden;
+}
+
+header{
+	background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#canvas {
+	background: #000000;
+	border: 10px inset brown;
+	position:relative;
+	text-align:center;
+	top: 10;
+	left: 45%;
+	-webkit-transition: all 1s;
+}
+
+progress {
+  background-color: whiteSmoke;
+  border-radius: 2px;
+
+  width: 200px;
+  height: 20px;
+  
+  position: center;
+  display: block;
+}
+
+progress-bar > span {
+  background-color: blue;
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
+  
+  position: center
+}
+
+p{
+	 display: block;
+	 position: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}

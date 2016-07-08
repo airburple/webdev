@@ -1,0 +1,56 @@
+/*================================================
+
+General
+
+================================================*/
+html,
+body {
+  background-color: #000;
+  height: 100%;
+}
+
+body {
+  background: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font: 100%/1.5 sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+	background: #000000;
+	border: 10px inset brown;
+	position:relative;
+	top: 100%;
+	left: 200;
+	-webkit-transition: all 1s;
+}
+
+progress {
+  background-color: whiteSmoke;
+  border-radius: 2px;
+
+  width: 200px;
+  height: 20px;
+  
+  position: center;
+  display: block;
+}
+
+progress-bar > span {
+  background-color: blue;
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+p{
+	 display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
